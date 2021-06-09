@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
       this.userService.login(this.login).subscribe(
         response => {
           
-          alert('Logged in as User :' + this.login.username)
+          alert('Logged in as User : ' + this.login.username)
           console.log(this.login.username)
         },
        error => console.log('error', error)      
